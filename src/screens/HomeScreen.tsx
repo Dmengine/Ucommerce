@@ -9,7 +9,7 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Meditations</Text>
-      <Text style={styles.subtitle}>Lorem Ipsum is simply dummy text</Text>
+      <Text style={styles.subtitle}>Meditation helps build focus & calmness.</Text>
       <TopTabs />
       <FlatList
         data={dummyData}

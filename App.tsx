@@ -3,12 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import IntroScreen from './src/screens/IntroScreen';
 import ProfileSetting from './src/screens/ProfileSetting';
 import HomeScreen from './src/screens/HomeScreen';
+import PaymentScreen from './src/components/PaymentScreen';
 
 export default function App() {
   return (
     // <IntroScreen />
     // <ProfileSetting />
-    <HomeScreen />
+    // <HomeScreen />
+    <PaymentScreen />
   );
 }
 
