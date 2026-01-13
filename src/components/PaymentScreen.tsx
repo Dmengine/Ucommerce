@@ -4,6 +4,10 @@ import BackArrow from './BackArrow'
 import { vs, s } from 'react-native-size-matters'
 import PaymentCardOption from './PaymentCardOption'
 import PaymentList from './PaymentList'
+import BankCard from './BankCard'
+import AddButton from './AddButton'
+import BankCardText from './BankCardText'
+import PayAndConfirmButton from './PayAndConfirmButton'
 
 const PaymentScreen = () => {
   return (
@@ -15,6 +19,10 @@ const PaymentScreen = () => {
 
       {/* payment content */}
       <PaymentList />
+      <BankCard />
+      <AddButton />
+      <BankCardText />
+      <PayAndConfirmButton />
     </View>
   )
 }
