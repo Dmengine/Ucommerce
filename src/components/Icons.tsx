@@ -60,7 +60,7 @@ export const VisaIcon = (props:SvgProps) => (
 );
 
 
-export const MasterCardProps = (props:SvgProps) => (
+export const MasterCardIcon = (props:SvgProps) => (
   <Svg
     width={33}
     height={25}
@@ -95,7 +95,7 @@ export const PayPalIcon = (props: SvgProps) => (
     viewBox="0 0 512 512"
     {...props}
   >
-    <Rect width={512} height={512} rx="15%" fill="#ffffff" />
+    <Rect width={33} height={25} rx="15%" fill="#ffffff" />
     <Path
       fill="#E0D03C"
       d="M377 184.8L180.7 399h-72c-5 0-9-5-8-10l48-304c1-7 7-12 14-12h122c84 3 107 46 92 112z"
