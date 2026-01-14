@@ -2,6 +2,7 @@ import { ImageBackground, StyleSheet, Text, View, Dimensions } from "react-nativ
 import React from "react";
 import { vs, s } from "react-native-size-matters";
 import { VideoIcon } from "./Icons";
+import { Colors } from '../constants/colors';
 
 const phoneWidth = Dimensions.get("window").width;
 const cardWidth = (phoneWidth - s(16)) / 2;
@@ -24,7 +25,7 @@ const MeditationCard: React.FC<MeditationCardProps> = ({imageURL, title, date}) 
         <View style={styles.liveBadge}>
           <Text
             style={{
-              color: "#FFFFFF",
+              color: Colors.white,
               fontSize: s(11),
               textAlign: "center",
               fontWeight: "semibold",
@@ -63,14 +64,14 @@ const styles = StyleSheet.create({
     width: cardWidth,
     height: vs(161),
     borderRadius: s(16),
-    backgroundColor: "#F4F0ED",
+    backgroundColor: Colors.gray300,
     overflow: "hidden",
     marginTop: vs(10),
     marginHorizontal: s(2),
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0, 0, 0, 0.45)",
+    backgroundColor: Colors.overlayDark,
     borderRadius: s(16),
   },
   image: {
@@ -81,17 +82,17 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   title: {
-    color: "#FFFFFF",
+    color: Colors.white,
     fontSize: s(18),
   },
   cardContent: {
-    color: "#FFFFFF",
+    color: Colors.white,
     position: "absolute",
     bottom: vs(18),
     left: s(12),
   },
   dateText: {
-    color: "#FFFFFF",
+    color: Colors.white,
     fontSize: s(12),
     marginStart: s(7),
   },
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
     width: s(39),
     height: s(22),
     borderRadius: s(90),
-    backgroundColor: "#FF0000",
+    backgroundColor: Colors.liveRed,
     position: "absolute",
     top: vs(7),
     right: s(10),

@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { vs, s } from 'react-native-size-matters'
+import { Colors } from '../constants/colors';
 
 const BankCardText = () => {
   return (
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
     text: {
         fontSize: s(14),
         fontWeight: '400',
-        color: '#A0A5BA',
+        color: Colors.gray700,
         textTransform: 'uppercase',
         width: s(49),
         height: vs(24)
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
     subText: {
         fontSize: s(28),
         fontWeight: '400',
-        color: '#181C2E',
+        color: Colors.textPrimary,
         alignItems: 'center',
         justifyContent: 'center',
         height: vs(40),

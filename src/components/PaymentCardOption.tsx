@@ -3,6 +3,7 @@ import React from "react";
 import { CashIcon } from "./Icons";
 import { vs, s } from "react-native-size-matters";
 import Entypo from "@expo/vector-icons/Entypo";
+import { Colors } from '../constants/colors';
 
 interface PaymentCardOptionProps {
   isSelected?: boolean;
@@ -38,14 +39,14 @@ const styles = StyleSheet.create({
   card: {
     width: s(85),
     height: vs(72),
-    backgroundColor: "#F0F5FA",
+    backgroundColor: Colors.gray350,
     borderRadius: s(10),
     justifyContent: "center",
     alignItems: "center",
   },
   text: {
     fontSize: s(14),
-    color: "#464E57",
+    color: Colors.gray800,
     textAlign: "center",
     marginTop: vs(4),
   },
@@ -54,15 +55,15 @@ const styles = StyleSheet.create({
     borderRadius: s(10),
   },
   selectedCard: {
-    backgroundColor: "#fff",
+    backgroundColor: Colors.white,
     borderWidth: s(2),
-    borderColor: "#ff7622",
+    borderColor: Colors.primary,
   },
   selectedIndicator: {
     width: s(24),
     height: s(24),
     borderRadius: s(12),
-    backgroundColor: "#ff7622",
+    backgroundColor: Colors.primary,
     position: "absolute",
     top: -vs(5),
     right: -s(5),

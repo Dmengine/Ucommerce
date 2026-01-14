@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import SendButton from "./SendButton";
 import { s, vs } from "react-native-size-matters";
+import { Colors } from '../constants/colors';
 
 interface SocialSectionProps {
   title: string;
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderBottomWidth: s(1),
-    borderBottomColor: "#E4E6E8",
+    borderBottomColor: Colors.gray600,
     paddingVertical: vs(15),
   },
   text: {
@@ -36,16 +37,16 @@ const styles = StyleSheet.create({
     flex: s(1),
     fontSize: s(12),
     fontWeight: "500",
-    color: "#8083A3",
+    color: Colors.gray750,
   },
   circleButton: {
     width: s(46),
     height: s(46),
     borderRadius: s(23),
-    backgroundColor: '#fff',
+    backgroundColor: Colors.white,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: s(1),
-    borderColor: '#E4E6E8'
+    borderColor: Colors.gray600
   }
 });

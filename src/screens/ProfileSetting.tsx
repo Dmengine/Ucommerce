@@ -8,6 +8,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Feather from '@expo/vector-icons/Feather';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { Colors } from '../constants/colors';
 
 
 const ProfileSetting = () => {
@@ -20,11 +21,11 @@ const ProfileSetting = () => {
       <Text style={styles.contactUs}>Contact Us</Text>
       <View style={styles.socialContainer}>
         <Text style={styles.socialMediaText}>Social Media Platforms</Text>
-        <SocialSection icon={<FontAwesome name="whatsapp" size={24} color="#178AD9" />} title="WhatsApp" />
-        <SocialSection icon={<Feather name="x" size={24} color="#00A2F3" />} title="X" />
-        <SocialSection icon={<AntDesign name="instagram" size={24} color="#178AD9" />} title="Instagram" />
-        <SocialSection icon={<FontAwesome5 name="snapchat" size={24} color="#00A2F3" />} title="Snapchat" />
-        <SocialSection icon={<FontAwesome5 name="tiktok" size={24} color="#00A2F3" />} title="TikTok" />
+        <SocialSection icon={<FontAwesome name="whatsapp" size={24} color={Colors.socialTeal} />} title="WhatsApp" />
+        <SocialSection icon={<Feather name="x" size={24} color={Colors.socialBlue} />} title="X" />
+        <SocialSection icon={<AntDesign name="instagram" size={24} color={Colors.socialTeal} />} title="Instagram" />
+        <SocialSection icon={<FontAwesome5 name="snapchat" size={24} color={Colors.socialBlue} />} title="Snapchat" />
+        <SocialSection icon={<FontAwesome5 name="tiktok" size={24} color={Colors.socialBlue} />} title="TikTok" />
       </View>
     </View>
   );
@@ -41,11 +42,11 @@ const styles = StyleSheet.create({
     marginTop: vs(25),
     fontSize: s(30),
     fontWeight: "600",
-    color: "#000000",
+    color: Colors.black,
     marginStart: s(19),
   },
   socialContainer: {
-    backgroundColor: "#F5F5FA",
+    backgroundColor: Colors.gray200,
     borderRadius: s(14),
     paddingHorizontal: s(18),
     paddingVertical: vs(15),
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
   socialMediaText: {
     fontSize: s(16),
     fontWeight: "600",
-    color: "#000000",
+    color: Colors.black,
     marginBottom: vs(15),
   },
 });

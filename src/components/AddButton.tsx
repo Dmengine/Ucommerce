@@ -2,6 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { s, vs } from 'react-native-size-matters'
 import { AddButtonIcon } from './Icons'
+import { Colors } from '../constants/colors';
 
 
 const AddButton = () => {
@@ -17,7 +18,7 @@ export default AddButton
 
 const styles = StyleSheet.create({
     constainer: {
-        backgroundColor: '#F0F5FA',
+        backgroundColor: Colors.gray350,
         marginTop: vs(15),
         height: vs(62),
         marginHorizontal: s(10),
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
         gap: s(10),
     },
     text: {
-        color: '#FF7622',
+        color: Colors.primary,
         fontSize: 14,
         fontWeight: '700',
         textTransform: 'uppercase',

@@ -3,6 +3,7 @@ import React from 'react'
 import { vs, s } from 'react-native-size-matters'
 import { BankCardIcon } from './Icons'
 import LottieView from 'lottie-react-native';
+import { Colors } from '../constants/colors';
 
 const BankCard = () => {
   return (
@@ -28,13 +29,13 @@ export default BankCard
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#F7F8F9',
+        backgroundColor: Colors.cardBackground,
         borderRadius: s(10),
         marginHorizontal: s(10),
         marginTop: vs(25),
         justifyContent: 'center',
         alignItems: 'center',
-        borderColor: '#E2E4E8',
+        borderColor: Colors.cardBorder,
         borderWidth: 1,
         paddingVertical: vs(15),
     },
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
         marginTop: vs(10),
         fontSize: s(16),
         fontWeight: '700',
-        color: '#32343E',
+        color: Colors.textSecondary,
         width: s(173),
         height: vs(19),
         textAlign: 'center',
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: s(15),
         fontWeight: '400',
-        color: '#2D2D2D',
+        color: Colors.textTertiary,
         marginTop: vs(6),
     }
 })

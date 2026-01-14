@@ -2,12 +2,9 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React, { act } from "react";
 import { useState } from "react";
 import { vs, s } from "react-native-size-matters";
+import { Colors } from '../constants/colors';
 
 const tabArr = ["Live", "Recorded"];
-
-const ACTIVE_BG = "#75563B";
-const ACTIVE_TEXT = "#FFFFFF";
-const INACTIVE_TEXT = "#2C2016";
 
 const TopTabs = () => {
   const [activeTab, setActiveTab] = useState("Live");
@@ -20,7 +17,7 @@ const TopTabs = () => {
             style={[
               styles.tabButton,
               isActive
-                ? { backgroundColor: ACTIVE_BG }
+                ? { backgroundColor: Colors.tabActive }
                 : { backgroundColor: "transparent" },
             ]}
             onPress={() => setActiveTab(tabName)}
@@ -28,7 +25,7 @@ const TopTabs = () => {
           >
             <Text
               style={
-                isActive ? { color: ACTIVE_TEXT, fontWeight: "600", fontSize: s(14) } : { color: INACTIVE_TEXT, fontWeight: "300", fontSize: s(14) }
+                isActive ? { color: Colors.white, fontWeight: "600", fontSize: s(14) } : { color: Colors.tabInactive, fontWeight: "300", fontSize: s(14) }
               }
             >
               {tabName}
@@ -44,7 +41,7 @@ export default TopTabs;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#F5F5F4",
+    backgroundColor: Colors.gray250,
     padding: s(4),
     width: s(334),
     height: vs(40),
@@ -58,6 +55,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: ACTIVE_BG,
+    backgroundColor: Colors.tabActive,
   },
 });

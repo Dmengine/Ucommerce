@@ -8,13 +8,14 @@ import BankCard from './BankCard'
 import AddButton from './AddButton'
 import BankCardText from './BankCardText'
 import PayAndConfirmButton from './PayAndConfirmButton'
+import { Colors } from '../constants/colors';
 
 const PaymentScreen = () => {
   return (
     <View style={styles.container}>
       <View style={{marginStart:s(20), flexDirection:'row', alignItems:'center', gap:s(20), borderRadius:2, width:133, paddingHorizontal:s(16)}}>
         <BackArrow />
-        <Text style={{color:'#181C2E', fontSize:17, fontWeight:'400'}}>Payment</Text>
+        <Text style={{color:Colors.textPrimary, fontSize:17, fontWeight:'400'}}>Payment</Text>
       </View>
 
       {/* payment content */}

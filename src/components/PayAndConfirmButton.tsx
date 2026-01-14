@@ -2,6 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { s, vs } from 'react-native-size-matters'
 import { AddButtonIcon } from './Icons'
+import { Colors } from '../constants/colors';
 
 
 const PayAndConfirmButton = () => {
@@ -16,7 +17,7 @@ export default PayAndConfirmButton
 
 const styles = StyleSheet.create({
     constainer: {
-        backgroundColor: '#FF7622',
+        backgroundColor: Colors.primary,
         marginTop: vs(15),
         height: vs(62),
         marginHorizontal: s(10),
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     text: {
-        color: '#FFFFFF',
+        color: Colors.white,
         fontSize: 14,
         fontWeight: '700',
         textTransform: 'uppercase',
