@@ -9,7 +9,7 @@
  * backgroundColor: Colors.primary
  */
 
-export const Colors = {
+const BaseColors = {
   // Primary Colors
   primary: '#FF7622',
   primaryDark: '#FF5F00',
@@ -59,8 +59,6 @@ export const Colors = {
   liveRed: '#FF0000',
   masterCardYellow: '#F79E1B',
   masterCardRed: '#EB001B',
-  cardBackground: '#F7F8F9',
-  cardBorder: '#E2E4E8',
   
   // UI Component Colors
   tabActive: '#75563B',
@@ -69,6 +67,18 @@ export const Colors = {
   
   // Additional UI Colors
   iconColor: '#231F20',
+} as const;
+
+// Create semantic references that point to gray scale colors for better maintainability
+const SemanticColors = {
+  cardBackground: BaseColors.gray150,  // #F7F8F9 - References gray150 for consistency
+  cardBorder: BaseColors.gray650,      // #E2E4E8 - References gray650 for consistency
+} as const;
+
+// Merge all colors into a single Colors export
+export const Colors = {
+  ...BaseColors,
+  ...SemanticColors,
 } as const;
 
 /**
