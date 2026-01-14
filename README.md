@@ -5,7 +5,7 @@ A React Native e-commerce application built with Expo, featuring meditation cont
 ## 📋 Project Status
 
 **Development Stage:** Prototype/MVP  
-**Code Quality Rating:** 6/10  
+**Code Quality Rating:** 6/10 (Category Average) | 3.85/10 (Weighted Score)  
 **Production Ready:** No
 
 ⚠️ **Note:** This project requires significant improvements before production deployment. See [CODE_REVIEW.md](./CODE_REVIEW.md) for detailed analysis and [IMPROVEMENT_CHECKLIST.md](./IMPROVEMENT_CHECKLIST.md) for actionable steps.

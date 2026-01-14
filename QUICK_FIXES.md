@@ -61,12 +61,12 @@ export const TYPOGRAPHY = {
     h2: 30,
   },
   fontWeight: {
-    light: '300' as const,
-    normal: '400' as const,
-    medium: '500' as const,
-    semibold: '600' as const,
-    bold: '700' as const,
-  },
+    light: '300',
+    normal: '400',
+    medium: '500',
+    semibold: '600',
+    bold: '700',
+  } as const,
 };
 
 export const BORDER_RADIUS = {
@@ -232,9 +232,9 @@ const styles = StyleSheet.create({
 
 ## 6. Fix UserAvatar.tsx - Remove Base64 Image
 
-**Step 1:** Save the avatar image to `assets/images/default-avatar.jpg`
+**Step 1:** Create directory `assets/images/` and save the avatar image to `assets/images/default-avatar.jpg`
 
-**Step 2:** Update component:
+**Step 2:** Update component (file located at `src/components/UserAvatar.tsx`):
 ```typescript
 // Before
 import { StyleSheet, Text, Image } from 'react-native'
@@ -262,6 +262,7 @@ interface UserAvatarProps {
 }
 
 const UserAvatar: React.FC<UserAvatarProps> = ({ 
+  // Note: Path is relative from src/components/ to project root
   source = require('../../assets/images/default-avatar.jpg'),
   size = SIZES.avatar.sm 
 }) => {
